@@ -1,0 +1,39 @@
+---
+title: "Impact of Education Level on Satisfaction with Federal Government"
+author: "Chen,Shupeng"
+date: 2020-09-24
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+library(tidyverse)
+library(usethis)
+library(devtools)
+library(cesR)
+```
+
+# Abstract
+In capitalist countries, popular satisfaction with the federal government often determines whether it wins elections.In this paper we explore the 2019 CES dataset,which was a non-probability survey**^1^** conducted in the lead-up to the 2019 Federal Election. We found that people''s education level is closely related to their satisfaction with the federal government.Our findings have certain reference value to the governing  party's re-election.
+
+
+
+```{r cars}
+summary(cars)
+fit <- lm(dist ~ speed, data = cars)
+```
+
+# Including Plots
+
+You can also embed plots. See Figure \@ref(fig:pie) for example:
+
+```{r pie, fig.cap='A fancy pie chart.', tidy=FALSE}
+par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c('Sky', 'Sunny side of pyramid', 'Shady side of pyramid'),
+  col = c('#0292D8', '#F7EA39', '#C4B632'),
+  init.angle = -50, border = NA
+)
+```
